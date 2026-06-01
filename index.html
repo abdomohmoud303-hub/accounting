@@ -8,16 +8,22 @@
 <style>
 :root {
   --bg: #0f1117;
-  --bg2: #161b27;
-  --bg3: #1e2535;
-  --bg4: #252d40;
-  --border: #2a3350;
-  --border2: #3a4a6b;
-  --text: #e8eaf0;
-  --text2: #8892aa;
-  --text3: #5a6480;
-  --accent: #4f8ef7;
-  --accent2: #3a7af5;
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"></script>
+
+<script>
+  // 2. إعدادات السيرفر بتاعتك (سيبها زي ما هي عندك)
+  const firebaseConfig = {
+    apiKey: "AIzaSyAs7...", // سيب مفتاحك الحقيقي هنا مكتوب زي ما هو
+    authDomain: "accounting-system-3b320.firebaseapp.com",
+    projectId: "accounting-system-3b320",
+    storageBucket: "accounting-system-3b320.appspot.com",
+    messagingSenderId: "591969476722",
+    appId: "1:591969476722:web:779bd3b29074b6dbcf69e3"
+  // 3. طريقة التشغيل المتوافقة والمضمونة
+  const app = firebase.initializeApp(firebaseConfig);
+  const auth = firebase.auth();
+</script>
   --green: #22c55e;
   --red: #ef4444;
   --yellow: #f59e0b;
